@@ -26,9 +26,3 @@ func _on_bird_crashed():
 
 func _on_point_scored():
 	score += 1
-
-
-func _input(event):
-	if event.is_action_pressed("jump"):
-		if not is_game_started:
-			game_started.emit()

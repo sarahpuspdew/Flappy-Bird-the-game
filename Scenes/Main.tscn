@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://dmkujg8e7016"]
 
-[ext_resource type="Shader" path="res://ScrollingEffect.gdshader" id="1_btr1o"]
 [ext_resource type="Script" path="res://Scripts/GameManager.gd" id="1_k3k2e"]
 [ext_resource type="Texture2D" uid="uid://dqnvim3g2n5qa" path="res://Assets/Sprite/background-day.png" id="2_i61i6"]
-[ext_resource type="PackedScene" uid="uid://b67y8gfmvhfgv" path="res://Message.tscn" id="2_qitog"]
+[ext_resource type="Shader" path="res://Shaders/ScrollingEffect.gdshader" id="2_pgb16"]
+[ext_resource type="PackedScene" uid="uid://b67y8gfmvhfgv" path="res://Scenes/Message.tscn" id="2_qitog"]
 [ext_resource type="PackedScene" uid="uid://5emv37rnxf22" path="res://Scenes/Ground.tscn" id="3_e4at4"]
 [ext_resource type="PackedScene" uid="uid://dvc63fj7ty7ia" path="res://Scenes/Bird.tscn" id="3_krg6l"]
 [ext_resource type="Script" path="res://Scripts/SkyBackground.gd" id="3_whsps"]
@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://d23s185xfy0ta" path="res://Scenes/HUD.tscn" id="7_27wq2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gnvn5"]
-shader = ExtResource("1_btr1o")
+shader = ExtResource("2_pgb16")
 shader_parameter/speed = 0.25
 
 [node name="Main" type="Node"]

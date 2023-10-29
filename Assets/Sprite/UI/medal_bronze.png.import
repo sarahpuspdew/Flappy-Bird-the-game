@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6henk63xa1i5"
-path="res://.godot/imported/8.png-17b8fb34ef4933a1f23262ae3e640fb1.ctex"
+uid="uid://bwk0t860df05d"
+path="res://.godot/imported/medal_bronze.png-f18a650d693f3eb82483367f57576ac6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprite/UI/8.png"
-dest_files=["res://.godot/imported/8.png-17b8fb34ef4933a1f23262ae3e640fb1.ctex"]
+source_file="res://Assets/Sprite/UI/medal_bronze.png"
+dest_files=["res://.godot/imported/medal_bronze.png-f18a650d693f3eb82483367f57576ac6.ctex"]
 
 [params]
 

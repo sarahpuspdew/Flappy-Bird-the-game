@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://5emv37rnxf22"]
 
 [ext_resource type="Script" path="res://Scripts/Ground.gd" id="1_32li5"]
-[ext_resource type="Shader" path="res://ScrollingEffect.gdshader" id="1_j7ekf"]
+[ext_resource type="Shader" path="res://Shaders/ScrollingEffect.gdshader" id="2_qkwmc"]
 [ext_resource type="Texture2D" uid="uid://cyjtuin5go5xg" path="res://Assets/Sprite/base.png" id="3_csqge"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ricu5"]
-shader = ExtResource("1_j7ekf")
+shader = ExtResource("2_qkwmc")
 shader_parameter/speed = 0.25
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ue04s"]
