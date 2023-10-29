@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://b67y8gfmvhfgv"]
+
+[ext_resource type="Texture2D" uid="uid://k62ercw1ysir" path="res://Assets/Sprite/UI/message.png" id="1_lvu1a"]
+[ext_resource type="Script" path="res://Scripts/Message.gd" id="1_pe6f7"]
+[ext_resource type="Texture2D" uid="uid://d2pw1fqn1rppl" path="res://Assets/Sprite/UI/gameover.png" id="2_p00or"]
+
+[node name="Message" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pe6f7")
+
+[node name="Title" type="TextureRect" parent="."]
+z_index = 5
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -92.0
+offset_right = 92.0
+offset_bottom = 267.0
+grow_horizontal = 2
+texture = ExtResource("1_lvu1a")
+
+[node name="GameOver" type="TextureRect" parent="."]
+z_index = 5
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -96.0
+offset_top = 104.0
+offset_right = 96.0
+offset_bottom = 146.0
+grow_horizontal = 2
+texture = ExtResource("2_p00or")
