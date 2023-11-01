@@ -9,11 +9,12 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 
 func _ready():
+	GameManager.game_started.connect(_on_game_started)
+	GameManager.bird_crashed.connect(_on_bird_crashed)
+	
 	velocity = Vector2.ZERO
 	$AnimationPlayer.play("idle")
 	set_physics_process(false)
-	GameManager.game_started.connect(_on_game_started)
-	GameManager.bird_crashed.connect(_on_bird_crashed)
 
 
 func _physics_process(delta):
@@ -35,10 +36,10 @@ func _input(event):
 func _on_game_started():
 	$AnimationPlayer.play("flap_wings")
 	set_physics_process(true)
+	set_process_input(true)
 
 
 func _on_bird_crashed():
-	#set_physics_process(false)
 	set_process_input(false)
 	stop()
 
