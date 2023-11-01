@@ -14,7 +14,8 @@ func _process(delta):
 
 func _on_point_area_body_exited(body):
 	if body is Bird:
-		GameManager.point_scored.emit()
+		if not GameManager.is_game_ended:
+			GameManager.point_scored.emit()
 
 
 func _on_visible_on_screen_notifier_2d_screen_exited():

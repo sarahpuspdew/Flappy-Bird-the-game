@@ -14,9 +14,9 @@ func _on_game_started():
 	$Score.text = "0"
 
 
-func _on_bird_crashed():
-	$Score.visible = false
-
-
 func _on_point_scored():
 	$Score.text = str(GameManager.score)
+
+
+func _on_bird_crashed():
+	$Score.visible = false
